@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wendell Kenneddy" />
+    <meta name="description" content="Calculate the distance between points." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Points" />
+    <meta property="og:site_name" content="Points" />
+    <meta
+      property="og:description"
+      content="Calculate the distance between points."
+    />
+    <!-- <meta property="og:url" content="" /> -->
+    <meta property="og:locale" content="en-US" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Points" />
+    <meta
+      property="twitter:description"
+      content="Calculate the distance between points."
+    />
+    <!-- <meta property="twitter:url" content="" /> -->
+    <title>Points</title>
+    <link rel="canonical" href="" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Points</h1>
+    </header>
+
+    <main>
+      <h2>Click to render a point</h2>
+
+      <div id="canvas-wrapper">
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <div class="btn-group">
+        <button id="calculate-btn">Calculate</button>
+        <button id="clear-btn">Clear</button>
+      </div>
+
+      <p>
+        By rendering two or more even number of points, you can calculate the
+        distance between the points. Note that, the calculations are made
+        following the order in which each point were rendered. So, for points p1
+        to p4, you get the distance between p1 to p2, and p3 to p4.
+      </p>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
